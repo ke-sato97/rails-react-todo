@@ -1,0 +1,34 @@
+# bundlerの設定を無視する
+/.bundle
+
+# デフォルトの SQLite データベースは無視する。
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# pidfile は無視するが、ディレクトリは残す。
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# 開発中にアップロードされたファイルを無視する。
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+backend/public/assets
+
+# 認証情報などを復号するためのマスターキーを無視する。
+backend/config/master.key
+
+backend/app/assets/builds/*
+!/app/assets/builds/.keep
+
+frontend/node_modules
+
+backend/config/settings.local.yml
+backend/config/settings/*.local.yml
+backend/config/environments/*.local.yml
