@@ -1,5 +1,5 @@
 // 入力フォーム
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { createTodo } from "../lib/api/todos"
 import { Todo } from "../interfaces/index"
 
